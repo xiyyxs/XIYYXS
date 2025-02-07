@@ -1,0 +1,78 @@
+{
+    "pc Build": [
+        {
+            "name": "CPU",
+            "description": "Intel i5-13400F",
+            "icon": "fas fa-microchip",
+            "url": "https://www.intel.com/content/www/us/en/products/sku/230501/intel-core-i513400f-processor-20m-cache-up-to-4-60-ghz/specifications.html"
+        },
+        {
+            "name": "GPU",
+            "description": "NVIDIA RTX 3060 Ti",
+            "icon": "fas fa-tv",
+            "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3060-3060ti/"
+        },
+        {
+            "name": "RAM",
+            "description": "32GB",
+            "icon": "fas fa-memory"
+        },
+        {
+            "name": "Motherboard",
+            "description": "ASUS PRIME Z690M-PLUS D4",
+            "icon": "fas fa-server",
+            "url": "https://www.asus.com/motherboards-components/motherboards/all-series/prime-z690m-plus-d4/"
+        }
+    ],
+    "peripherals": [
+        {
+            "name": "Keyboard",
+            "description": " Dark Project 87 One Fuji White",
+            "icon": "fas fa-keyboard",
+            "url": "https://old.darkproject.eu/keyboards/dpo-87-fuji/"
+        },
+        {
+            "name": "Mouse",
+            "description": "Logitech G102",
+            "icon": "fas fa-mouse",
+            "url": "https://www.logitechg.com/products/gaming-mice/g102-lightsync-rgb-gaming-mouse.910-005802.html"
+        },
+        {
+            "name": "Monitor",
+            "description": "SAMSUNG\n 1080p 180Hz 27 inch",
+            "icon": "fas fa-desktop"
+        },
+        {
+            "name": "Headset",
+            "description": "Fifine Ampligame H9",
+            "icon": "fas fa-headphones",
+            "url": "https://fifinemicrophone.com/products/fifine-ampligame-h9"
+        },
+        {
+            "name": "Microphone",
+            "description": "Fifine Ampligame A8",
+            "icon": "fas fa-microphone",
+            "url": "https://fifinemicrophone.com/products/fifine-ampligame-a8"
+        }
+    ],
+    "other": [
+        {
+            "name": "Phone",
+            "description": "IPhone 13 Mini",
+            "icon": "fas fa-mobile-screen",
+            "url": "https://www.apple.com/by/iphone-13/"
+        },
+        {
+            "name": "Graphic Tablet",
+            "description": "Huion H640P",
+            "icon": "fas fa-tablet-button",
+            "url": "https://www.huion.com/products/pen_tablet/Inspiroy/H640P.html"
+        },
+        {
+            "name": "Console",
+            "description": "Xbox Series X",
+            "icon": "fas fa-gamepad",
+            "url": "https://www.xbox.com/consoles/xbox-series-x"
+        }
+    ]
+}

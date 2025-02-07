@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'DrukWideCyr';
+    src: url('../assets/fonts/DrukWideCyr-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --card-color: rgb(61, 44, 22, 0.05);
+    --text-color: #ffffff;
+    --accent-color: #bf8d36;
+    --accent-gradient: linear-gradient(135deg, #bf8d36 0%, #c75830 100%);
+    --background-gradient: linear-gradient(135deg, #130e07 0%, #36250f 100%);
+    --glass-bg-gradient: linear-gradient(135deg, rgba(46, 36, 26, 0.65) 0%,rgba(62, 45, 22, 0.65) 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    min-height: 100vh;
+    background: var(--background-gradient);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-family: DrukWideCyr;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.5s ease;
+}
+
+nav a:hover, nav a.active {
+    background: var(--accent-color);
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--accent-gradient);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: var(--card-color);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 32px 0 rgba(191, 141, 54, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(191, 141, 54, 0.5);
+}
+
+.card[style*="cursor: pointer"] {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card[style*="cursor: pointer"]:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.card i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.card p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.card-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    backdrop-filter: blur(15px);
+    background: var(--glass-bg-gradient);
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
